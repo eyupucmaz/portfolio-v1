@@ -1,3 +1,12 @@
+/*
+     Author: Eyyup Ucmaz
+     Normalize File: https://necolas.github.io/normalize.css/8.0.1/normalize.css
+     Date: 05 June 2020
+*/
+
+/*
+     DEFAULT SETTINGS
+*/
 * {
      -moz-box-sizing: border-box;
      -webkit-box-sizing: border-box;
@@ -6,14 +15,102 @@
 
 body {
      height: 100vh;
-     font-size: 16px;
      font-family: "Salsa", cursive;
+     background: #141630;
+     background: -moz-linear-gradient(top, #141630 1%, #1f3043 100%);
+     background: -webkit-linear-gradient(top, #141630 1%, #1f3043 100%);
+     background: linear-gradient(to bottom, #141630 1%, #1f3043 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141630', endColorstr='#1f3043',GradientType=0 );
 }
 
+/*
+     Container Styles
+*/
 .container {
      margin: 0 auto;
 }
-.intro .myintro h1 {
-     font-size: 2
-     rem;
+
+/*
+     MY Intro Styles
+*/
+.my-intro {
+     padding: 80px 0 0 30px;
+}
+.my-intro h1 {
+     color: white;
+     margin: 3px;
+}
+
+.my-intro h1,
+span {
+     font-size: 6vw;
+     letter-spacing: 0.625rem;
+}
+.my-intro h6 {
+     font-size: 2.5vw;
+     letter-spacing: 0.2em;
+}
+.my-name,
+.my-intro h6 {
+     color: #ffa400;
+     margin: 5px;
+}
+
+/*
+     ICONS Styles
+*/
+.icons {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: flex-start;
+     margin-top: 80px;
+}
+.iconify {
+     width: 100%;
+     cursor: pointer;
+     font-size: 11vw;
+     color: #f2f2f2;
+}
+.iconify:focus {
+     color: #ffa400;
+}
+.link {
+     background-color: red;
+     width: 100%;
+     cursor: pointer;
+     font-size: 11vw;
+}
+/*
+     DEV PHOTO Styles
+*/
+
+.img-dev img {
+     width: 100%;
+     bottom: 0px;
+     z-index: -20;
+     margin-top: 50px;
+}
+/*
+-------------TABLET------------------
+*/
+@media only screen and (min-width: 768px) {
+     body {
+          background: #141630;
+          background: -moz-linear-gradient(top, #141630 1%, #1f3043 100%);
+          background: -webkit-linear-gradient(top, #141630 1%, #1f3043 100%);
+          background: linear-gradient(to bottom, #141630 1%, #1f3043 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141630', endColorstr='#1f3043',GradientType=0 );
+     }
+}
+
+/*
+-------------DESKTOP------------------
+*/
+
+@media only screen and (min-width: 1024px) {
+     body {
+          height: 100vh;
+     }
 }
